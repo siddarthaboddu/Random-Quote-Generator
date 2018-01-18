@@ -13,7 +13,7 @@ function query() {
         
     });*/
     var data;
-    $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", data, function(jd) {
+    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?", data, function(jd) {
         $('#inputtext').html('        The Quote: ' + jd.quoteText + '        ');
         $('#inputtext').append('<p style="text-align:right"> - ' + jd.quoteAuthor + '</p>');
     });
